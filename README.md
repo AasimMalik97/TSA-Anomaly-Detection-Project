@@ -25,10 +25,21 @@ Applying anomaly detection to London’s energy data enables the identification 
 
 ---
 
+## Column Description
+### The description of the column are as follows:
+
+timestamp [ float ] : is provided as a Unix epoch in seconds.
+
+value [ int ] : is a real value measurement of some metric at the timestamp.
+
+is_anomaly [ boolean ] : is a boolean value which is True if the corresponding value is identified as an anomaly.
+
+predicted [ float ] : is a real value prediction coming from a black box forecasting model for that timestamp. This black box forecasting model is assumed to be aware of only the true data distribution.
+
 ## 📊 Dataset Statistics
 
-- **Total Entries**: X (Total rows in the dataset)
-- **Anomaly Percentage**: Y% flagged as anomalies, showing the ratio of outliers to total entries
+- **Total Entries**: 15831 (Total rows in the dataset)
+- **Anomaly Percentage**: 5% flagged as anomalies, showing the ratio of outliers to total entries
 - **Feature Breakdown**:
   - **Averages**: Mean and standard deviation for continuous features
   - **Anomaly Distribution**: Anomalies per feature (if applicable), showing which features have the highest rates of anomalies.
@@ -40,23 +51,19 @@ Applying anomaly detection to London’s energy data enables the identification 
 ### 1. **Installation**
    - **Clone the Repository**:
      ```bash
-     git clone <https://www.kaggle.com/competitions/anomaly-detection/data?select=Submission.csv>
+     git clone <git@github.com:AasimMalik97/TSA-Anomaly-Detection-Project.git>
      ```
    - **Install Required Libraries**:
      ```bash
-     pip install pandas numpy scikit-learn matplotlib
+     conda create -n TSA-Project
      ```
 
-### 2. **Load the Data**
-   ```python
-   import pandas as pd
-   data = pd.read_csv('<path_to_file>')
+## License
 
-License
 Refer to Kaggle's dataset licensing terms for details.  
 
 
-Collaborator 
+## Collaborator 
 
 Joe khater
 Assim malik
