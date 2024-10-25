@@ -56,6 +56,8 @@ predicted [ float ] : is a real value prediction coming from a black box forecas
    - **Install Required Libraries**:
      ```bash
      conda create -n TSA-Project
+     cond activate TSA_Project
+     pip install -r requierments.txt
      ```
 
 ## License
@@ -66,4 +68,4 @@ Refer to Kaggle's dataset licensing terms for details.
 ## Collaborator 
 
 Joe khater
-Assim malik
+Aasim malik
